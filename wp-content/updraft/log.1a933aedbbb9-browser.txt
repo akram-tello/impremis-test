@@ -1,0 +1,6 @@
+0000.006 (R) [notice] Looking for db archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-db.gz
+0000.006 (R) [notice] Archive is expected to be size: 208.6 KB: OK
+0000.006 (R) [notice] Looking for plugins archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip
+0000.006 (R) [notice] Archive is expected to be size: 14682.2 KB: OK
+0000.007 (R) [warning] Error: Existing unremoved folders from a previous restore exist (please use the "Delete old folders" button to delete them before trying again): /Users/local_sites/WP/impremis-test/app/public/wp-content/updraft/plugins-old
+0000.011 (R) [notice] Restore failed...

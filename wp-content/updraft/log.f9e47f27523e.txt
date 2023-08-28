@@ -1,0 +1,145 @@
+0000.003 () Opened log file at time: Mon, 28 Aug 2023 12:23:06 +0000 on http://localhost:10008
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.7 WP: 6.3 PHP: 8.1.9 (fpm-fcgi, Darwin akrams-Air.realtek 22.5.0 Darwin Kernel Version 22.5.0: Thu Jun  8 22:22:19 PDT 2023; root:xnu-8796.121.3~7/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.3M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 42732.6 MB
+0000.006 () Restore setup, now closing connection and starting restore over AJAX.
+0000.005 () Opened log file at time: Mon, 28 Aug 2023 12:23:06 +0000 on http://localhost:10008
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.7 WP: 6.3 PHP: 8.1.9 (fpm-fcgi, Darwin akrams-Air.realtek 22.5.0 Darwin Kernel Version 22.5.0: Thu Jun  8 22:22:19 PDT 2023; root:xnu-8796.121.3~7/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.9M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 42732.3 MB
+0000.005 () Ensuring WP_Filesystem is setup for a restore
+0000.008 () WP_Filesystem is setup and ready for a restore
+0000.011 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.012 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.013 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.014 () Entity: db
+0000.014 () restore_backup(backup_file=backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-db.gz, type=db, info=a:0:{}, last_one=)
+0000.014 () Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-db.gz, 0.2 Mb)
+0000.014 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.015 () Database successfully unpacked
+0000.015 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.015 () Using direct MySQL access; value of use_mysqli is: 1
+0000.015 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.064 () Max packet size: 32 MB
+0000.064 () Entering maintenance mode
+0000.065 () Enabling Maintenance mode&#8230;
+0000.075 () Backup of: http://localhost:8813
+0000.082 () Content URL: http://localhost:8813/wp-content
+0000.082 () Uploads URL: http://localhost:8813/wp-content/uploads
+0000.082 () Old table prefix: wp_
+0000.082 () Old ABSPATH: /var/www/html/
+0000.082 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.082 () Site information: multisite=0
+0000.082 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.082 () New table prefix: px_
+0000.084 () Processing table (InnoDB): wp_options - will restore as: px_options
+0000.164 () Atomic restore: dropping original table (wp_options)
+0000.169 () Atomic restore: renaming new table (px_options) to final table name (wp_options)
+0000.172 () Restoring prior UD configuration (table: wp_options; keys: 101)
+0000.199 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.199 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.199 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.199 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.199 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.199 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.204 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.206 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.207 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.223 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, wp-content/plugins/updraftplus/options.php)
+0000.224 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, wp-content/plugins/updraftplus/options.php)
+0000.248 () Search and replacing table: wp_options: rows: 317
+0000.251 () PHP event: code E_USER_DEPRECATED: The PSR-0 `Requests_...` class names in the Requests library are deprecated. Switch to the PSR-4 `WpOrg\Requests\...` class names at your earliest convenience. (line 171, wp-includes/Requests/src/Autoload.php)
+0000.258 () Incomplete object detected in database: FS_Plugin; Search and replace will be skipped for these entries
+0000.264 () Processing table (InnoDB): wp_users - will restore as: px_users
+0000.272 () Atomic restore: dropping original table (wp_users)
+0000.274 () Atomic restore: renaming new table (px_users) to final table name (wp_users)
+0000.280 () Search and replacing table: wp_users: rows: 1
+0000.280 () Processing table (InnoDB): wp_usermeta - will restore as: px_usermeta
+0000.290 () Atomic restore: dropping original table (wp_usermeta)
+0000.293 () Atomic restore: renaming new table (px_usermeta) to final table name (wp_usermeta)
+0000.297 () Search and replacing table: wp_usermeta: rows: 30
+0000.297 () Processing table (InnoDB): wp_commentmeta - will restore as: px_commentmeta
+0000.303 () Atomic restore: dropping original table (wp_commentmeta)
+0000.305 () Atomic restore: renaming new table (px_commentmeta) to final table name (wp_commentmeta)
+0000.311 () Search and replacing table: wp_commentmeta: rows: 0
+0000.311 () Processing table (InnoDB): wp_comments - will restore as: px_comments
+0000.323 () Atomic restore: dropping original table (wp_comments)
+0000.327 () Atomic restore: renaming new table (px_comments) to final table name (wp_comments)
+0000.332 () Search and replacing table: wp_comments: rows: 1
+0000.333 () Processing table (InnoDB): wp_links - will restore as: px_links
+0000.338 () Atomic restore: dropping original table (wp_links)
+0000.340 () Atomic restore: renaming new table (px_links) to final table name (wp_links)
+0000.345 () Search and replacing table: wp_links: rows: 0
+0000.345 () Processing table (InnoDB): wp_postmeta - will restore as: px_postmeta
+0000.351 () Atomic restore: dropping original table (wp_postmeta)
+0000.353 () Atomic restore: renaming new table (px_postmeta) to final table name (wp_postmeta)
+0000.356 () Search and replacing table: wp_postmeta: rows: 56
+0000.357 () Processing table (InnoDB): wp_posts - will restore as: px_posts
+0000.390 () Atomic restore: dropping original table (wp_posts)
+0000.394 () Atomic restore: renaming new table (px_posts) to final table name (wp_posts)
+0000.398 () Skipping search/replace on GUID column in posts table
+0000.399 () Search and replacing table: wp_posts: rows: 178
+0000.402 () Processing table (InnoDB): wp_term_relationships - will restore as: px_term_relationships
+0000.407 () Atomic restore: dropping original table (wp_term_relationships)
+0000.409 () Atomic restore: renaming new table (px_term_relationships) to final table name (wp_term_relationships)
+0000.413 () Search and replacing table: wp_term_relationships: rows: 2
+0000.413 () Processing table (InnoDB): wp_term_taxonomy - will restore as: px_term_taxonomy
+0000.422 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.425 () Atomic restore: renaming new table (px_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.431 () Search and replacing table: wp_term_taxonomy: rows: 1
+0000.432 () Processing table (InnoDB): wp_termmeta - will restore as: px_termmeta
+0000.438 () Atomic restore: dropping original table (wp_termmeta)
+0000.439 () Atomic restore: renaming new table (px_termmeta) to final table name (wp_termmeta)
+0000.443 () Search and replacing table: wp_termmeta: rows: 0
+0000.443 () Processing table (InnoDB): wp_terms - will restore as: px_terms
+0000.450 () Unlocking database and leaving maintenance mode
+0000.450 () Disabling Maintenance mode&#8230;
+0000.450 () Atomic restore: dropping original table (wp_terms)
+0000.452 () Atomic restore: renaming new table (px_terms) to final table name (wp_terms)
+0000.455 () Search and replacing table: wp_terms: rows: 1
+0000.455 () Finished: lines processed: 43 in 0.44 seconds
+0000.456 () Cleaning up rubbish...
+0000.457 () Entity: plugins
+0000.457 () restore_backup(backup_file=backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:65:"/Users/local_sites/WP/impremis-test/app/public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0000.457 () Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip, 14.3 MB)
+0000.457 () Unzipping backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/71b0066f/ using UpdraftPlus_ZipArchive, starting index 0
+0000.855 () Unzip progress: 1002 out of 2427 files (21.8 MB, plugins/bulk-image-alt-text-with-yoast/vendor/freemius/includes/class-freemius-abstract.php)
+0001.016 () Unzip progress: 2003 out of 2427 files (47.6 MB, plugins/updraftplus/vendor/guzzlehttp/promises/src/Coroutine.php)
+0001.077 () Unzip progress: 2427 out of 2427 files (50.4 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0001.079 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.079 () Moving old data: can potentially use wp_filesystem method / -old
+0001.079 () Moving old data out of the way...
+0001.438 () Top-level entities being moved: show-current-template, index.php, akismet, auto-hide-admin-bar, advanced-custom-fields-pro, updraftplus, hello.php, bulk-image-alt-text-with-yoast
+0001.439 () Moving unpacked backup into place...
+0001.714 () Top-level entities being moved: show-current-template, index.php, akismet, auto-hide-admin-bar, advanced-custom-fields-pro, updraftplus, hello.php, bulk-image-alt-text-with-yoast
+0001.715 () Cleaning up rubbish...
+0001.717 () Entity: themes
+0001.717 () restore_backup(backup_file=backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-themes.zip, type=themes, info=a:3:{s:4:"path";s:64:"/Users/local_sites/WP/impremis-test/app/public/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0001.717 () Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-themes.zip, 2.5 MB)
+0001.717 () Unzipping backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-themes.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/b544f077/ using UpdraftPlus_ZipArchive, starting index 0
+0001.760 () Unzip progress: 161 out of 161 files (4.2 MB, themes/twentytwentythree/theme.json)
+0001.761 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.761 () Moving old data: can potentially use wp_filesystem method / -old
+0001.761 () Moving old data out of the way...
+0001.772 () Top-level entities being moved: .DS_Store, index.php, starter
+0001.772 () Moving unpacked backup into place...
+0001.787 () Top-level entities being moved: .DS_Store, index.php, starter, twentytwentythree
+0001.788 () Cleaning up rubbish...
+0001.789 () Entity: uploads
+0001.789 () restore_backup(backup_file=backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:65:"/Users/local_sites/WP/impremis-test/app/public/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0001.789 () Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-uploads.zip, 2.3 MB)
+0001.789 () Unzipping backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-uploads.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/5aba648f/ using UpdraftPlus_ZipArchive, starting index 0
+0001.800 () Unzip progress: 38 out of 38 files (2.3 MB, uploads/cache/e0b7863c6c9f19dfbaa457b181d7fa9e8a2db32a.php)
+0001.801 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.801 () Moving old data: can potentially use wp_filesystem method / -old
+0001.801 () Moving old data out of the way...
+0001.807 () Moving unpacked backup into place...
+0001.811 () Cleaning up rubbish...
+0001.813 () Entity: others
+0001.813 () restore_backup(backup_file=backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-others.zip, type=others, info=a:2:{s:4:"path";s:57:"/Users/local_sites/WP/impremis-test/app/public/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0001.813 () Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-others.zip, 0 MB)
+0001.813 () Unzipping backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-others.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/77c39af2/ using UpdraftPlus_ZipArchive, starting index 0
+0001.817 () Unzip progress: 5 out of 5 files (6 KB, index.php)
+0001.818 () Cleaning up rubbish...
+0001.818 () PHP event: code E_WARNING: rmdir(/Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/77c39af2): Directory not empty (line 386, wp-admin/includes/class-wp-filesystem-direct.php)
+0001.818 () Error: Failed to delete working directory after restoring. (/Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/77c39af2)
+0001.827 () Restore successful!
+0001.827 () Restore successful

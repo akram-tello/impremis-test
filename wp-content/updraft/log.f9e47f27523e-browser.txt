@@ -1,0 +1,98 @@
+0000.011 (R) [notice] Looking for db archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-db.gz
+0000.011 (R) [notice] Archive is expected to be size: 208.6 KB: OK
+0000.012 (R) [notice] Looking for plugins archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip
+0000.012 (R) [notice] Archive is expected to be size: 14682.2 KB: OK
+0000.012 (R) [notice] Looking for themes archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-themes.zip
+0000.012 (R) [notice] Archive is expected to be size: 2578.6 KB: OK
+0000.013 (R) [notice] Looking for uploads archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-uploads.zip
+0000.013 (R) [notice] Archive is expected to be size: 2387.7 KB: OK
+0000.013 (R) [notice] Looking for others archive: file name: backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-others.zip
+0000.013 (R) [notice] Archive is expected to be size: 0.9 KB: OK
+0000.013 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.014 (R) [notice] Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-db.gz, 0.2 Mb)
+0000.015 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.066 (R) [notice] Enabling Maintenance mode&#8230;
+0000.075 (R) [notice] Backup of: http://localhost:8813
+0000.082 (R) [notice] Content URL: http://localhost:8813/wp-content
+0000.082 (R) [notice] Uploads URL: http://localhost:8813/wp-content/uploads
+0000.082 (R) [notice] Old table prefix: wp_
+0000.082 (R) [notice] Old ABSPATH: /var/www/html/
+0000.082 (R) [notice] UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.082 (R) [notice] Site information: multisite = 0
+0000.082 (R) [notice] Site information: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.082 (R) [notice] New table prefix: px_
+0000.084 (R) [notice] Processing table (InnoDB):  wp_options - will restore as: px_options
+0000.164 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.169 (R) [notice] Atomic restore: renaming new table (px_options) to final table name (wp_options)
+0000.248 (R) [notice] Search and replacing table: wp_options: rows: 317
+0000.264 (R) [notice] Processing table (InnoDB):  wp_users - will restore as: px_users
+0000.272 (R) [notice] Atomic restore: dropping original table (wp_users)
+0000.274 (R) [notice] Atomic restore: renaming new table (px_users) to final table name (wp_users)
+0000.279 (R) [notice] Search and replacing table: wp_users: rows: 1
+0000.280 (R) [notice] Processing table (InnoDB):  wp_usermeta - will restore as: px_usermeta
+0000.290 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0000.293 (R) [notice] Atomic restore: renaming new table (px_usermeta) to final table name (wp_usermeta)
+0000.297 (R) [notice] Search and replacing table: wp_usermeta: rows: 30
+0000.297 (R) [notice] Processing table (InnoDB):  wp_commentmeta - will restore as: px_commentmeta
+0000.303 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0000.305 (R) [notice] Atomic restore: renaming new table (px_commentmeta) to final table name (wp_commentmeta)
+0000.311 (R) [notice] Search and replacing table: wp_commentmeta: rows: 0
+0000.311 (R) [notice] Processing table (InnoDB):  wp_comments - will restore as: px_comments
+0000.323 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0000.327 (R) [notice] Atomic restore: renaming new table (px_comments) to final table name (wp_comments)
+0000.332 (R) [notice] Search and replacing table: wp_comments: rows: 1
+0000.333 (R) [notice] Processing table (InnoDB):  wp_links - will restore as: px_links
+0000.338 (R) [notice] Atomic restore: dropping original table (wp_links)
+0000.340 (R) [notice] Atomic restore: renaming new table (px_links) to final table name (wp_links)
+0000.345 (R) [notice] Search and replacing table: wp_links: rows: 0
+0000.345 (R) [notice] Processing table (InnoDB):  wp_postmeta - will restore as: px_postmeta
+0000.351 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0000.353 (R) [notice] Atomic restore: renaming new table (px_postmeta) to final table name (wp_postmeta)
+0000.356 (R) [notice] Search and replacing table: wp_postmeta: rows: 56
+0000.357 (R) [notice] Processing table (InnoDB):  wp_posts - will restore as: px_posts
+0000.390 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0000.394 (R) [notice] Atomic restore: renaming new table (px_posts) to final table name (wp_posts)
+0000.399 (R) [notice] Search and replacing table: wp_posts: rows: 178
+0000.402 (R) [notice] Processing table (InnoDB):  wp_term_relationships - will restore as: px_term_relationships
+0000.407 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0000.409 (R) [notice] Atomic restore: renaming new table (px_term_relationships) to final table name (wp_term_relationships)
+0000.413 (R) [notice] Search and replacing table: wp_term_relationships: rows: 2
+0000.413 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy - will restore as: px_term_taxonomy
+0000.422 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0000.425 (R) [notice] Atomic restore: renaming new table (px_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.431 (R) [notice] Search and replacing table: wp_term_taxonomy: rows: 1
+0000.432 (R) [notice] Processing table (InnoDB):  wp_termmeta - will restore as: px_termmeta
+0000.438 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0000.439 (R) [notice] Atomic restore: renaming new table (px_termmeta) to final table name (wp_termmeta)
+0000.443 (R) [notice] Search and replacing table: wp_termmeta: rows: 0
+0000.443 (R) [notice] Processing table (InnoDB):  wp_terms - will restore as: px_terms
+0000.450 (R) [notice] Disabling Maintenance mode&#8230;
+0000.450 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0000.452 (R) [notice] Atomic restore: renaming new table (px_terms) to final table name (wp_terms)
+0000.455 (R) [notice] Search and replacing table: wp_terms: rows: 1
+0000.455 (R) [notice] Finished: lines processed: 43 in 0.44 seconds
+0000.456 (R) [notice] Cleaning up rubbish...
+0000.457 (R) [notice] Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-plugins.zip, 14.3 MB)
+0000.855 (R) [notice] Unzip progress: 1002 out of 2427 files (21.8 MB, plugins/bulk-image-alt-text-with-yoast/vendor/freemius/includes/class-freemius-abstract.php)
+0001.016 (R) [notice] Unzip progress: 2003 out of 2427 files (47.6 MB, plugins/updraftplus/vendor/guzzlehttp/promises/src/Coroutine.php)
+0001.077 (R) [notice] Unzip progress: 2427 out of 2427 files (50.4 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0001.079 (R) [notice] Moving old data out of the way...
+0001.439 (R) [notice] Moving unpacked backup into place...
+0001.715 (R) [notice] Cleaning up rubbish...
+0001.717 (R) [notice] Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-themes.zip, 2.5 MB)
+0001.760 (R) [notice] Unzip progress: 161 out of 161 files (4.2 MB, themes/twentytwentythree/theme.json)
+0001.761 (R) [notice] Moving old data out of the way...
+0001.772 (R) [notice] Moving unpacked backup into place...
+0001.788 (R) [notice] Cleaning up rubbish...
+0001.789 (R) [notice] Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-uploads.zip, 2.3 MB)
+0001.800 (R) [notice] Unzip progress: 38 out of 38 files (2.3 MB, uploads/cache/e0b7863c6c9f19dfbaa457b181d7fa9e8a2db32a.php)
+0001.801 (R) [notice] Moving old data out of the way...
+0001.807 (R) [notice] Moving unpacked backup into place...
+0001.811 (R) [notice] Cleaning up rubbish...
+0001.813 (R) [notice] Unpacking backup... (backup_2023-07-18-1316_Impremis_ACF_Build_28398d513be3-others.zip, 0 MB)
+0001.817 (R) [notice] Unzip progress: 5 out of 5 files (6 KB, index.php)
+0001.818 (R) [notice] Cleaning up rubbish...
+0001.818 (R) [notice] Error: Failed to delete working directory after restoring. (/Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/77c39af2)
+0001.818 (R) [notice] Files found:
+0001.818 (R) [notice] * upgrade
+0001.827 (R) [notice] Restore successful!
