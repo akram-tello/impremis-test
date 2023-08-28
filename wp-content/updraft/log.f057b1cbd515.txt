@@ -1,0 +1,114 @@
+0000.004 () Opened log file at time: Mon, 28 Aug 2023 11:58:59 +0000 on http://localhost:10008
+0000.005 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.7 WP: 6.3 PHP: 8.1.9 (fpm-fcgi, Darwin akrams-Air.realtek 22.5.0 Darwin Kernel Version 22.5.0: Thu Jun  8 22:22:19 PDT 2023; root:xnu-8796.121.3~7/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.3M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 () Free space on disk containing Updraft's temporary directory: 42558.3 MB
+0000.027 () Restore setup, now closing connection and starting restore over AJAX.
+0000.002 () Opened log file at time: Mon, 28 Aug 2023 11:58:59 +0000 on http://localhost:10008
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.7 WP: 6.3 PHP: 8.1.9 (fpm-fcgi, Darwin akrams-Air.realtek 22.5.0 Darwin Kernel Version 22.5.0: Thu Jun  8 22:22:19 PDT 2023; root:xnu-8796.121.3~7/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.9M | 8M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 42558 MB
+0000.003 () Ensuring WP_Filesystem is setup for a restore
+0000.004 () WP_Filesystem is setup and ready for a restore
+0000.005 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.006 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.009 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.010 () Entity: db
+0000.010 () restore_backup(backup_file=backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-db.gz, type=db, info=a:0:{}, last_one=)
+0000.010 () Unpacking backup... (backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-db.gz, 0.2 Mb)
+0000.010 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.010 () Database successfully unpacked
+0000.010 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.010 () Using direct MySQL access; value of use_mysqli is: 1
+0000.011 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.061 () Max packet size: 32 MB
+0000.061 () Entering maintenance mode
+0000.061 () Enabling Maintenance mode&#8230;
+0000.070 () Backup of: http://localhost:10008
+0000.070 () Content URL: http://localhost:10008/wp-content
+0000.070 () Uploads URL: http://localhost:10008/wp-content/uploads
+0000.070 () Old table prefix: wp_
+0000.070 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.070 () Site information: multisite=0
+0000.071 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.071 () New table prefix: k0_
+0000.073 () Processing table (InnoDB): wp_options - will restore as: k0_options
+0000.170 () Atomic restore: dropping original table (wp_options)
+0000.174 () Atomic restore: renaming new table (k0_options) to final table name (wp_options)
+0000.176 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.179 () Processing table (InnoDB): wp_users - will restore as: k0_users
+0000.188 () Atomic restore: dropping original table (wp_users)
+0000.191 () Atomic restore: renaming new table (k0_users) to final table name (wp_users)
+0000.194 () Processing table (InnoDB): wp_usermeta - will restore as: k0_usermeta
+0000.199 () Atomic restore: dropping original table (wp_usermeta)
+0000.201 () Atomic restore: renaming new table (k0_usermeta) to final table name (wp_usermeta)
+0000.203 () Processing table (InnoDB): wp_commentmeta - will restore as: k0_commentmeta
+0000.209 () Atomic restore: dropping original table (wp_commentmeta)
+0000.210 () Atomic restore: renaming new table (k0_commentmeta) to final table name (wp_commentmeta)
+0000.213 () Processing table (InnoDB): wp_comments - will restore as: k0_comments
+0000.221 () Atomic restore: dropping original table (wp_comments)
+0000.224 () Atomic restore: renaming new table (k0_comments) to final table name (wp_comments)
+0000.227 () Processing table (InnoDB): wp_links - will restore as: k0_links
+0000.231 () Atomic restore: dropping original table (wp_links)
+0000.233 () Atomic restore: renaming new table (k0_links) to final table name (wp_links)
+0000.237 () Processing table (InnoDB): wp_postmeta - will restore as: k0_postmeta
+0000.242 () Atomic restore: dropping original table (wp_postmeta)
+0000.244 () Atomic restore: renaming new table (k0_postmeta) to final table name (wp_postmeta)
+0000.246 () Processing table (InnoDB): wp_posts - will restore as: k0_posts
+0000.255 () Atomic restore: dropping original table (wp_posts)
+0000.258 () Atomic restore: renaming new table (k0_posts) to final table name (wp_posts)
+0000.261 () Processing table (InnoDB): wp_term_relationships - will restore as: k0_term_relationships
+0000.267 () Atomic restore: dropping original table (wp_term_relationships)
+0000.269 () Atomic restore: renaming new table (k0_term_relationships) to final table name (wp_term_relationships)
+0000.272 () Processing table (InnoDB): wp_term_taxonomy - will restore as: k0_term_taxonomy
+0000.278 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.280 () Atomic restore: renaming new table (k0_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.283 () Processing table (InnoDB): wp_termmeta - will restore as: k0_termmeta
+0000.288 () Atomic restore: dropping original table (wp_termmeta)
+0000.290 () Atomic restore: renaming new table (k0_termmeta) to final table name (wp_termmeta)
+0000.293 () Processing table (InnoDB): wp_terms - will restore as: k0_terms
+0000.302 () Unlocking database and leaving maintenance mode
+0000.302 () Disabling Maintenance mode&#8230;
+0000.302 () Atomic restore: dropping original table (wp_terms)
+0000.304 () Atomic restore: renaming new table (k0_terms) to final table name (wp_terms)
+0000.306 () Finished: lines processed: 42 in 0.29 seconds
+0000.306 () Cleaning up rubbish...
+0000.308 () Entity: plugins
+0000.308 () restore_backup(backup_file=backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:65:"/Users/local_sites/WP/impremis-test/app/public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0000.308 () Unpacking backup... (backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-plugins.zip, 12.7 MB)
+0000.308 () Unzipping backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-plugins.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/e3bcfa79/ using UpdraftPlus_ZipArchive, starting index 0
+0000.668 () Unzip progress: 1002 out of 2000 files (24.6 MB, plugins/advanced-custom-fields-pro/includes/admin/post-types/admin-field-groups.php)
+0000.820 () Unzip progress: 2000 out of 2000 files (44.6 MB, plugins/updraftplus/includes/class-remote-send.php)
+0000.823 () Moving old data: filesystem method / updraft_dir is potentially possible
+0000.823 () Moving old data: can potentially use wp_filesystem method / -old
+0000.823 () Moving old data out of the way...
+0001.083 () Top-level entities being moved: show-current-template, index.php, akismet, auto-hide-admin-bar, advanced-custom-fields-pro, updraftplus, hello.php, bulk-image-alt-text-with-yoast
+0001.084 () Moving unpacked backup into place...
+0001.373 () Top-level entities being moved: index.php, advanced-custom-fields-pro, updraftplus, hello.php
+0001.373 () Cleaning up rubbish...
+0001.375 () Entity: themes
+0001.375 () restore_backup(backup_file=backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-themes.zip, type=themes, info=a:3:{s:4:"path";s:64:"/Users/local_sites/WP/impremis-test/app/public/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0001.375 () Unpacking backup... (backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-themes.zip, 10.4 MB)
+0001.375 () Unzipping backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-themes.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/7b163c17/ using UpdraftPlus_ZipArchive, starting index 0
+0001.483 () Unzip progress: 450 out of 450 files (12.4 MB, themes/index.php)
+0001.485 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.485 () Moving old data: can potentially use wp_filesystem method / -old
+0001.485 () Moving old data out of the way...
+0001.496 () Top-level entities being moved: .DS_Store, index.php, starter
+0001.499 () Moving unpacked backup into place...
+0001.550 () Top-level entities being moved: index.php, twentytwentyone, twentytwentytwo, twentytwentythree
+0001.550 () Cleaning up rubbish...
+0001.551 () Entity: uploads
+0001.551 () restore_backup(backup_file=backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:65:"/Users/local_sites/WP/impremis-test/app/public/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0001.551 () Unpacking backup... (backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-uploads.zip, 0 MB)
+0001.552 () Unzipping backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-uploads.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/6b92015b/ using UpdraftPlus_ZipArchive, starting index 0
+0001.555 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.555 () Moving old data: can potentially use wp_filesystem method / -old
+0001.555 () Moving old data out of the way...
+0001.562 () Moving unpacked backup into place...
+0001.562 () Cleaning up rubbish...
+0001.563 () Entity: others
+0001.563 () restore_backup(backup_file=backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-others.zip, type=others, info=a:2:{s:4:"path";s:57:"/Users/local_sites/WP/impremis-test/app/public/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0001.563 () Unpacking backup... (backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-others.zip, 0 MB)
+0001.563 () Unzipping backup_2023-08-28-1151_wpimpremis_5d0e94a76cfe-others.zip to /Users/local_sites/WP/impremis-test/app/public/wp-content/upgrade/fb6e89af/ using UpdraftPlus_ZipArchive, starting index 0
+0001.565 () Unzip progress: 2 out of 2 files (6 KB, .DS_Store)
+0001.566 () Cleaning up rubbish...
+0001.572 () Restore successful!
+0001.572 () Restore successful
