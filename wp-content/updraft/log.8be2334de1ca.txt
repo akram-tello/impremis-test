@@ -1,0 +1,115 @@
+0000.000 (0) Opened log file at time: Tue, 29 Aug 2023 09:25:27 +0000 on http://localhost:10008
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.23.7 WP: 6.3 PHP: 8.1.9 (fpm-fcgi, Darwin akrams-Air.realtek 22.5.0 Darwin Kernel Version 22.5.0: Thu Jun  8 22:22:19 PDT 2023; root:xnu-8796.121.3~7/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=16777216) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.6M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 40086.5 MB
+0000.006 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.006 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.013 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1689686203, seconds_ago=3614924)
+0000.014 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2023-08-29 09:25:27
+0000.015 (0) Semaphore (fd, wp_options) reset to 1
+0000.016 (0) Set semaphore last lock (fd) time to 2023-08-29 09:25:27
+0000.016 (0) Semaphore lock (fd) complete
+0000.019 (0) Backup run: resumption=0, nonce=8be2334de1ca, file_nonce=8be2334de1ca begun at=1693301127 (0s ago), job type=backup
+0000.019 (0) Scheduling a resumption (1) after 300 seconds (1693301427) in case this run gets aborted
+0000.041 (0) Checking if we have a zip executable available
+0000.042 (0) Testing: /usr/bin/zip
+0000.055 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.056 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.057 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.057 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.057 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.066 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.067 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.074 (0) Working binary zip found: /usr/bin/zip
+0000.075 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.075 (0) Creation of backups of directories: beginning
+0000.076 (0) No backup of plugins: excluded by user's options
+0000.077 (0) No backup of themes: excluded by user's options
+0000.077 (0) No backup of uploads: excluded by user's options
+0000.077 (0) No backup of others: excluded by user's options
+0000.078 (0) Saving backup status to database (elements: 0)
+0000.079 (0) Beginning creation of database dump (WordPress DB)
+0000.080 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.095 (0) Table wp_options: Total expected rows (via COUNT): 303
+0000.096 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.128 (0) Table wp_options: Rows added in this batch (next record: 731): 298 (uncompressed bytes in this segment=1318561) in 0.04 seconds
+0000.131 (0) Table wp_options: finishing file(s) (2, 266.1 KB)
+0000.134 (0) Table wp_users: Total expected rows (via COUNT): 1
+0000.135 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.136 (0) Table wp_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1530) in 0.00 seconds
+0000.137 (0) Table wp_users: finishing file(s) (2, 0.6 KB)
+0000.141 (0) Table wp_usermeta: Total expected rows (via COUNT): 30
+0000.142 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.142 (0) Table wp_usermeta: Rows added in this batch (next record: 30): 30 (uncompressed bytes in this segment=3612) in 0.00 seconds
+0000.144 (0) Table wp_usermeta: finishing file(s) (2, 1.5 KB)
+0000.149 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0000.150 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=729) in 0.00 seconds
+0000.151 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.154 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0000.154 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.155 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2313) in 0.00 seconds
+0000.157 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0000.167 (0) Table wp_links: Total expected rows (via COUNT): 0
+0000.169 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1508) in 0.00 seconds
+0000.171 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0000.174 (0) Table wp_postmeta: Total expected rows (via COUNT): 47
+0000.175 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.176 (0) Table wp_postmeta: Rows added in this batch (next record: 57): 47 (uncompressed bytes in this segment=8336) in 0.00 seconds
+0000.178 (0) Table wp_postmeta: finishing file(s) (2, 2 KB)
+0000.184 (0) Table wp_posts: Total expected rows (via COUNT): 169
+0000.185 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.191 (0) Table wp_posts: Rows added in this batch (next record: 195): 169 (uncompressed bytes in this segment=609238) in 0.01 seconds
+0000.193 (0) Table wp_posts: finishing file(s) (2, 23.3 KB)
+0000.195 (0) Table wp_term_relationships: Total expected rows (approximate): 2
+0000.196 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 2 (uncompressed bytes in this segment=715) in 0.00 seconds
+0000.197 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.200 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 1
+0000.200 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.200 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=970) in 0.00 seconds
+0000.202 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.206 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0000.207 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=702) in 0.00 seconds
+0000.208 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.211 (0) Table wp_terms: Total expected rows (via COUNT): 1
+0000.211 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.212 (0) Table wp_terms: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=780) in 0.00 seconds
+0000.213 (0) Table wp_terms: finishing file(s) (2, 0.4 KB)
+0000.213 (0) PHP event: code E_WARNING: filemtime(): stat failed for /Users/local_sites/WP/impremis-test/app/public/wp-content/updraft/backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db.gz (line 1976, wp-content/plugins/updraftplus/backup.php)
+0000.214 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_options.table.tmpr732.gz (1/12/fopen): adding to final database dump
+0000.217 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_options.table.gz (2/12/fopen): adding to final database dump
+0000.217 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_users.table.tmpr2.gz (3/12/fopen): adding to final database dump
+0000.217 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_users.table.gz (4/12/fopen): adding to final database dump
+0000.218 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_usermeta.table.tmpr31.gz (5/12/fopen): adding to final database dump
+0000.218 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_usermeta.table.gz (6/12/fopen): adding to final database dump
+0000.218 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_commentmeta.table.tmpr0.gz (7/12/fopen): adding to final database dump
+0000.219 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_commentmeta.table.gz (8/12/fopen): adding to final database dump
+0000.219 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_comments.table.tmpr2.gz (9/12/fopen): adding to final database dump
+0000.219 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_comments.table.gz (10/12/fopen): adding to final database dump
+0000.220 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_links.table.tmpr0.gz (11/12/fopen): adding to final database dump
+0000.220 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_links.table.gz (12/12/fopen): adding to final database dump
+0000.220 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_postmeta.table.tmpr58.gz (13/12/fopen): adding to final database dump
+0000.220 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_postmeta.table.gz (14/12/fopen): adding to final database dump
+0000.221 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_posts.table.tmpr196.gz (15/12/fopen): adding to final database dump
+0000.221 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_posts.table.gz (16/12/fopen): adding to final database dump
+0000.221 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_term_relationships.table.tmpr100001.gz (17/12/fopen): adding to final database dump
+0000.222 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_term_relationships.table.gz (18/12/fopen): adding to final database dump
+0000.222 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_term_taxonomy.table.tmpr2.gz (19/12/fopen): adding to final database dump
+0000.222 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_term_taxonomy.table.gz (20/12/fopen): adding to final database dump
+0000.222 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_termmeta.table.tmpr0.gz (21/12/fopen): adding to final database dump
+0000.223 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_termmeta.table.gz (22/12/fopen): adding to final database dump
+0000.223 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_terms.table.tmpr2.gz (23/12/fopen): adding to final database dump
+0000.223 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db-table-wp_terms.table.gz (24/12/fopen): adding to final database dump
+0000.230 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db.gz: finished writing out complete database file (297.2 KB)
+0000.235 (0) Total database tables backed up: 12 (backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db.gz, size: 304400, sha1: 720c610c11b4c389cdced82e81365386ed82cb50, sha256: 31a39bad425ac1e42175683be84deadac28314ad40cc7ad358ea3dc09596a4d5)
+0000.236 (0) backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.236 (0) Saving backup history. Total backup size: 297.3 KB
+0000.237 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.238 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0000.239 (0) No remote despatch: user chose no remote backup service
+0000.239 (0) Recording as successfully uploaded: backup_2023-08-29-0925_Impremis_ACF_Build_8be2334de1ca-db.gz
+0000.239 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0000.240 (0) Resume backup (8be2334de1ca, 0): finish run
+0000.241 (0) Decremented the semaphore (fd) by 1
+0000.243 (0) Semaphore (fd) unlocked
+0000.244 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0000.245 (0) No email will/can be sent - the user has not configured an email address.
+0000.245 (0) The backup apparently succeeded and is now complete

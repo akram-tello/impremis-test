@@ -88,7 +88,7 @@ function my_acf_init() {
         // FAQ
         acf_register_block(array(
             'name'              => 'faqs',
-            'title'             => __('FAQ'),
+            'title'             => __('FAQhhh'),
             'description'       => __('A custom FAQs block.'),
             'render_callback'   => 'impremis_block_callback',
             'category'          => 'impremis',
@@ -105,6 +105,17 @@ function my_acf_init() {
             'category'          => 'impremis',
             'icon'              => 'forms',
             'keywords'          => array( 'forms', 'contact', 'contact form' ),
+        ));
+
+        // CTA
+        acf_register_block(array(
+            'name'              => 'cta',
+            'title'             => __('CTA'),
+            'description'       => __('A custom CTA block.'),
+            'render_callback'   => 'impremis_block_callback',
+            'category'          => 'impremis',
+            'icon'              => 'megaphone',
+            'keywords'          => array( 'cta', 'call to action' ),
         ));
     }
 }
