@@ -22,7 +22,7 @@
     "autoprefixer": "^10.4.0",
     "dir-archiver": "^1.1.1",
     "postcss-cli": "^9.0.1",
-    "postcss-import": "^14.0.2",
+    "postcss-import": "^14.1.0",
     "rtlcss": "^2.5.0",
     "tailwindcss": "^2.2.19"
   },
