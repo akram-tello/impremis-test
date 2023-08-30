@@ -79,4 +79,17 @@
 
 	});
 
+    // HEADER
+    const header = document.getElementById('masthead');
+    if (header) {
+        header.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 10) {
+                header.style.backgroundColor = '#FFFFFF';
+            } else {
+                header.style.backgroundColor = '#1A1A1A';
+            }
+        });
+    } 
+
 })();
