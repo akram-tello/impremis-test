@@ -88,8 +88,25 @@
                 header.style.backgroundColor = '#FFFFFF';
             } else {
                 header.style.backgroundColor = '#1A1A1A';
+                header.style.borderBottom = '0.5px solid #FFFFFF';
             }
         });
     } 
+
+      // Dropdown Menu for Submenu
+      const subMenuToggleButtons = document.querySelectorAll('.menu-item-has-children > a'); // Assuming the parent li has a class 'menu-item-has-children' and directly contains an anchor
+      if (subMenuToggleButtons) {
+          subMenuToggleButtons.forEach(button => {
+              button.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  const parentLi = this.parentNode;
+                  const subMenu = parentLi.querySelector('.sub-menu'); // Assuming the submenu has a class 'sub-menu'
+                  if (subMenu) {
+                      subMenu.classList.toggle('open'); // Toggle 'open' class to show/hide
+                  }
+              });
+          });
+      }
+    
 
 })();

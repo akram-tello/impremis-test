@@ -9,6 +9,19 @@
     }
 }
 
+.main-navigation ul ul {
+    @apply hidden absolute mt-4;
+}
+
+.sub-menu.open {
+    @apply block py-2 px-4;
+    background-color: #00A8E8;
+    color: #ffff;
+}
+
+
+
+
 .mobile-menu {
     @apply block md:hidden w-40px h-40px relative;
 
