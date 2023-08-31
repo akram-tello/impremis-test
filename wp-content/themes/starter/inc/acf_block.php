@@ -128,5 +128,16 @@ function my_acf_init() {
             'icon'              => 'book-alt',
             'keywords'          => array( 'story', 'about' ),
         ));
+
+        // MISSION & VISION
+        acf_register_block(array(
+            'name'              => 'section',
+            'title'             => __('Section'),
+            'description'       => __('A custom Mission & Vision block.'),
+            'render_callback'   => 'impremis_block_callback',
+            'category'          => 'impremis',
+            'icon'              => 'chart-bar',
+            'keywords'          => array( 'mission', 'vision', 'about' ),
+        ));
     }
 }

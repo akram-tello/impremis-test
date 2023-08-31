@@ -643,23 +643,23 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
-.mt-3 {
-	margin-top: 0.75rem;
-}
-.mt-6 {
-	margin-top: 1.5rem;
-}
 .mt-2 {
 	margin-top: 0.5rem;
 }
 .mt-4 {
 	margin-top: 1rem;
 }
-.mb-5 {
-	margin-bottom: 1.25rem;
+.mr-auto {
+	margin-right: auto;
+}
+.mb-6 {
+	margin-bottom: 1.5rem;
 }
 .mt-8 {
 	margin-top: 2rem;
+}
+.mb-5 {
+	margin-bottom: 1.25rem;
 }
 .mb-8 {
 	margin-bottom: 2rem;
@@ -697,6 +697,9 @@ video {
 .justify-center {
 	justify-content: center;
 }
+.place-self-center {
+	place-self: center;
+}
 .bg-cover {
 	background-size: cover;
 }
@@ -706,10 +709,6 @@ video {
 .p-4 {
 	padding: 1rem;
 }
-.px-6 {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
 .px-5 {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
@@ -718,9 +717,9 @@ video {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
-.py-4 {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+.py-8 {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 .py-12 {
 	padding-top: 3rem;
@@ -750,9 +749,6 @@ video {
 .font-bold {
 	font-weight: 700;
 }
-.font-medium {
-	font-weight: 500;
-}
 .font-light {
 	font-weight: 300;
 }
@@ -762,23 +758,11 @@ video {
 .capitalize {
 	text-transform: capitalize;
 }
-.leading-\[4rem\] {
-	line-height: 4rem;
-}
-.leading-8 {
-	line-height: 2rem;
-}
-.leading-relaxed {
-	line-height: 1.625;
-}
 .leading-\[24px\] {
 	line-height: 24px;
 }
 .leading-\[22px\] {
 	line-height: 22px;
-}
-.tracking-wider {
-	letter-spacing: 0.05em;
 }
 .tracking-\[4px\] {
 	letter-spacing: 4px;
@@ -788,9 +772,6 @@ video {
 }
 .tracking-\[3\.6px\] {
 	letter-spacing: 3.6px;
-}
-.tracking-tight {
-	letter-spacing: -0.025em;
 }
 .text-white {
 	--tw-text-opacity: 1;
@@ -1386,6 +1367,10 @@ img.absolute {
 }
 @media (min-width: 1024px) {
 
+	.lg\:col-span-7 {
+		grid-column: span 7 / span 7;
+	}
+
 	.lg\:col-start-2 {
 		grid-column-start: 2;
 	}
@@ -1394,27 +1379,34 @@ img.absolute {
 		grid-column-end: 11;
 	}
 
-	.lg\:flex {
-		display: flex;
-	}
-
-	.lg\:w-full {
-		width: 100%;
-	}
-
-	.lg\:w-auto {
-		width: auto;
+	.lg\:ml-8 {
+		margin-left: 2rem;
 	}
 
 	.lg\:w-7\/12 {
 		width: 58.333333%;
 	}
 
-	.lg\:max-w-lg {
-		max-width: 32rem;
+	.lg\:w-auto {
+		width: auto;
 	}
 
 	.lg\:flex-row {
 		flex-direction: row;
+	}
+
+	.lg\:gap-8 {
+		gap: 2rem;
+	}
+
+	.lg\:py-16 {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+	}
+}
+@media (min-width: 1280px) {
+
+	.xl\:gap-0 {
+		gap: 0px;
 	}
 }
