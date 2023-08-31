@@ -88,7 +88,7 @@ function my_acf_init() {
         // FAQ
         acf_register_block(array(
             'name'              => 'faqs',
-            'title'             => __('FAQhhh'),
+            'title'             => __('FAQ'),
             'description'       => __('A custom FAQs block.'),
             'render_callback'   => 'impremis_block_callback',
             'category'          => 'impremis',
