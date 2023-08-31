@@ -139,5 +139,16 @@ function my_acf_init() {
             'icon'              => 'chart-bar',
             'keywords'          => array( 'mission', 'vision', 'about' ),
         ));
+
+        // TEAM
+        acf_register_block(array(
+            'name'              => 'team',
+            'title'             => __('Team'),
+            'description'       => __('A custom Team block.'),
+            'render_callback'   => 'impremis_block_callback',
+            'category'          => 'impremis',
+            'icon'              => 'groups',
+            'keywords'          => array( 'team', 'about' ),
+        ));
     }
 }
