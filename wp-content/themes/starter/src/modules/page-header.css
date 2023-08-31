@@ -1,14 +1,26 @@
 .module--page-header {
     @apply relative;
+    top: -292px;
+    left: 0;
+    width: 100%;
 
     .bg {
         @apply w-full;
+        object-fit: cover;
+        max-height: 90vh;
     }
 }
 
-.page-header {
-    @apply absolute top-0 left-0 w-full h-full flex;
+.hero-content{
+    font-size: 32px; font-weight: bold; color: white; text-transform: capitalize;
+}
 
+.hero-heading{font-size: 20px; letter-spacing: 4px; color: #00A8E8; text-transform: uppercase;}
+
+.mw-50{max-width: 50vh;}
+
+.page-header {
+    @apply absolute top-0 left-0 w-full h-full flex ; 
     &.align-top {
         @apply items-start;
     }
@@ -22,7 +34,7 @@
     }
 
     .wrapper {
-        @apply py-30px;
+        @apply py-30px text-left;
 
         &.align-left {
             @apply text-left;
@@ -35,7 +47,5 @@
         &.align-right {
             @apply text-right;
         }
-
-      
     }
-}  
+}

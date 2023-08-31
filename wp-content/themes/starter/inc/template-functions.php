@@ -46,7 +46,7 @@ function responsive_image( $mobile, $desktop, $class ) { ?>
 	?>
 	<picture>
 		<source media="(max-width: 650px)" srcset="<?= wp_get_attachment_image_url( $mobile, 'full' ) ?>" />
-		<source media="(min-width: 651px)" srcset="<?= wp_get_attachment_image_url( $deskto, 'full' ) ?>" />
+		<source media="(min-width: 651px)" srcset="<?= wp_get_attachment_image_url( $desktop, 'full' ) ?>" />
 		<img data-src="<?= wp_get_attachment_image_url( $desktop, 'full' ) ?>" src="<?= get_template_directory_uri() ?>/img/placeholder.png" class="<?= $class ?>" alt="<?= $alt ?>" />
 	</picture>
 

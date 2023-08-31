@@ -633,11 +633,53 @@ video {
 .absolute {
 	position: absolute;
 }
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mt-3 {
+	margin-top: 0.75rem;
+}
+.mt-6 {
+	margin-top: 1.5rem;
+}
 .block {
 	display: block;
 }
+.w-full {
+	width: 100%;
+}
 .transform {
 	transform: var(--tw-transform);
+}
+.items-center {
+	align-items: center;
+}
+.px-6 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+.px-5 {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+.py-2 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.font-semibold {
+	font-weight: 600;
+}
+.tracking-wider {
+	letter-spacing: 0.05em;
+}
+.transition-colors {
+	transition-property: background-color, border-color, color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+.duration-300 {
+	transition-duration: 300ms;
 }
 .module-title {
 	margin-bottom: 30px;
@@ -665,9 +707,6 @@ video {
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
     padding-top: 20px;
 }
-/* .admin-bar .site-header {
-    @apply top-[42px] adminMobile:top-[32px];
-} */
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
@@ -677,7 +716,6 @@ video {
 	padding-bottom: 20px;
     color: #00A8E8;
 }
-/* site-header on scroll not change the padding top, in otherwords keep it 20px */
 .header-logo img {
 	max-width: 100px;
 }
@@ -1066,10 +1104,21 @@ img.absolute {
 }
 .module--page-header {
 	position: relative;
+    top: -292px;
+    left: 0;
+    width: 100%;
 }
 .module--page-header .bg {
 	width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        max-height: 90vh;
 }
+.hero-content{
+    font-size: 32px; font-weight: bold; color: white; text-transform: capitalize;
+}
+.hero-heading{font-size: 20px; letter-spacing: 4px; color: #00A8E8; text-transform: uppercase;}
+.mw-50{max-width: 50vh;}
 .page-header {
 	position: absolute;
 	top: 0px;
@@ -1090,6 +1139,7 @@ img.absolute {
 .page-header .wrapper {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	text-align: left;
 }
 .page-header .wrapper.align-left {
 	text-align: left;
@@ -1194,5 +1244,27 @@ img.absolute {
 	.module--contact-form {
 		padding-top: 80px;
 		padding-bottom: 80px;
+	}
+}
+.focus\:outline-none:focus {
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+}
+@media (min-width: 1024px) {
+
+	.lg\:flex {
+		display: flex;
+	}
+
+	.lg\:w-full {
+		width: 100%;
+	}
+
+	.lg\:w-auto {
+		width: auto;
+	}
+
+	.lg\:max-w-lg {
+		max-width: 32rem;
 	}
 }
