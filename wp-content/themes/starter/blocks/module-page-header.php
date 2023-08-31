@@ -4,23 +4,33 @@
     $content = get_field('intro_text');
     $cta = get_field('cta');
     $background = get_field('background');
-    $alignment = get_field('alignment');
 ?>
 
-<div class="module module--page-header <?= $className ?>" style="height: 50vh;">
-    <?php if( !empty( $background['mobile'] ) && !empty( $background['desktop'] ) ): ?>
-        <?= responsive_image( $background['mobile'], $background['desktop'], 'bg' )?>
-    <?php endif ?>
-</div>
+<?php
+$mobile_image_url = wp_get_attachment_image_src($background['mobile'], 'full')[0];
+$desktop_image_url = wp_get_attachment_image_src($background['desktop'], 'full')[0];
+?>
 
-<section class="wrapper module module--page-header px-6 mx-auto">
-    <div class="items-center lg:flex">
-        <div class="w-full lg:w-full <?= $alignment['vertical'] ?>">
-            <div class="lg:max-w-lg mw-50<?= $alignment['horizontal'] ?>">
-                <h1 class="font-semibold hero-heading"><?= $heading ?></h1>
-                <p class="mt-3 hero-content"><?= $content ?></p>
+<style>
+.custom-bg {
+  background-image: url('<?= $mobile_image_url ?>');
+}
+
+@media (min-width: 768px) {
+  .custom-bg {
+    background-image: url('<?= $desktop_image_url ?>');
+  }
+}
+</style>
+
+<section class="w-full bg-center bg-cover h-[38rem] custom-bg module module--page-header <?= $className ?>">
+    <div class="wrapper flex flex-col items-center w-full h-full p-4 bg-gray-900/40 lg:flex-row">
+        <div class="w-full lg:w-7/12">
+            <div class="flex flex-col items-start justify-center">
+                <h1 class="text-3xl font-semibold text-blue lg:text-4xl text-[20px] tracking-[4px] uppercase"><?= $heading ?></h1>
+                <p class="mt-2 text-white text-[32px] font-bold capitalize tracking-[0px]"><?= $content ?></p>
                 <?php if( !empty( $cta ) ): ?>
-                <a href="<?= $cta['url'] ?>" style="background: #00A8E8; color: #FFFFFF; text-align: center; letter-spacing: 3.6px; font-size: 22px; text-transform: uppercase;" class="w-full px-5 py-2 mt-6 text-sm tracking-wider transition-colors duration-300 transform lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500"><?= $cta['title'] ?></a>
+                <a href="<?= $cta['url'] ?>" class="w-full px-5 py-2 mt-4 text-sm text-white capitalize transition-colors duration-300 transform bg-blue lg:w-auto focus:outline-none text-[22px] tracking-[3.6px]"><?= $cta['title'] ?></a>
                 <?php endif ?>
             </div>
         </div>

@@ -63,7 +63,7 @@ function my_acf_init() {
             'keywords'          => array( 'rte', 'text', 'content' ),
         ));
 
-        // PAGE HEADER
+        // PAGE HEADER used
         acf_register_block(array(
             'name'              => 'page-header',
             'title'             => __('Page Header'),
@@ -116,6 +116,17 @@ function my_acf_init() {
             'category'          => 'impremis',
             'icon'              => 'megaphone',
             'keywords'          => array( 'cta', 'call to action' ),
+        ));
+
+        //STORY 
+        acf_register_block(array(
+            'name'              => 'story',
+            'title'             => __('Story'),
+            'description'       => __('A custom Story block.'),
+            'render_callback'   => 'impremis_block_callback',
+            'category'          => 'impremis',
+            'icon'              => 'book-alt',
+            'keywords'          => array( 'story', 'about' ),
         ));
     }
 }
