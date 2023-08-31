@@ -2,6 +2,10 @@
     @apply py-40px md:py-80px;
 }
 
+.bg-faq {
+    background-color: #1A1A1A;
+}
+
 .faq-group {
     &__item {
         @apply mb-50px;
@@ -11,7 +15,7 @@
 .faq {
     &-list {
         &__item {
-            @apply mb-20px;
+            @apply mb-20px border-0 border-b border-[#C2EEFF];
             
             &.active {
                 .faq-answer { @apply block; }
@@ -23,12 +27,11 @@
     }
 
     &-question {
-        @apply py-10px px-20px border flex flex-wrap justify-between items-center cursor-pointer;
+        @apply py-10px px-20px flex flex-wrap justify-between items-center cursor-pointer text-[#C2EEFF] text-[20px] font-normal;
     }
 
     &-question::after {
         content: '+';
-
     }
 
     &-answer {
