@@ -60,7 +60,7 @@
 					</div>
                 </div>
                
-                <div class="flex flex-wrap justify-end footer-menu-container gap-4 text-white">
+                <div class="flex flex-wrap justify-center footer-menu-container gap-4 text-white">
                     <?php
                     wp_nav_menu(
                         array(
