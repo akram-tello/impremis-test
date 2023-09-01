@@ -1,13 +1,15 @@
 <?php 
     $className = !empty($block['className']) ? $block['className'] : null;
     $heading   = get_field('heading');
+    $title     = get_field('title');
+    $link      = get_field('link');
 ?>
 
 <section class="module module--faq bg-faq <?= $className ?> relative">
     <div class="wrapper"> 
 
         <h1 class="wrapper text-white flex items-center justify-center text-3xl font-semibold text-blue lg:text-4xl text-[20px] tracking-[4px] uppercase">     
-            frequently asked question
+            <?= $title ?>
         </h1>
 
         <h2 class="module--title text-white text-[32px] font-bold capitalize"><?= $heading ?></h2>
@@ -25,9 +27,9 @@
             <?php endwhile ?>
         </div>
 
-        <h3 class="text-3xl font-semibold text-blue lg:text-4xl text-[20px] tracking-[4px] uppercase">
-            View All FAQ --->
-        </h3>
+        <?php if( !empty( $link ) ): ?>
+            <a href="<?= $link['url'] ?>" class="text-3xl font-semibold text-blue lg:text-4xl text-[20px] tracking-[4px] uppercase"><?= $link['title'] ?></a>
+        <?php endif ?>
 
     </div>
 </section>

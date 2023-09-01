@@ -19,15 +19,18 @@
             <?php if( have_rows('team_members') ): ?>
                 <?php while( have_rows('team_members') ): the_row(); 
                     $image = get_sub_field('team_member_image');
-                ?>
-
-                <div>
-                    <?php if( $image ): ?>
-                        <img class="object-cover aspect-square" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+                    if( $image ): 
+                        $image_url = wp_get_attachment_image_src($image['ID'], 'full')[0];
+                    ?>
+                    <div>
+                        <img decoding="async" class="object-cover aspect-square" src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                    </div>
+                    <?php else: ?>
+                        <p>No image found.</p>
                     <?php endif; ?>
-                </div>
-
                 <?php endwhile; ?>
+            <?php else: ?>
+                <p>No team members found.</p>
             <?php endif; ?>
             </div>
         </div>
